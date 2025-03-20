@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tiago Borges |Holy Grail Layout Example </title>
+    <meta name="description" content="A common layout on the web called the holy grail'">
+    <meta name="author" content="Tiago Borges">
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: grid;
+            grid-template-areas: "header header"
+                "nav main"
+                "nav aside"
+                "footer footer";
+            grid-template-columns: 1fr 3fr;
+            grid-gap: 10px;
+            min-height: 100vh;
+        }
+
+        header {
+            grid-area: header;
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 1em;
+        }
+
+        nav {
+            grid-area: nav;
+            background: #555;
+            padding: 1em;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            display: block;
+            margin-bottom: 0.5em;
+        }
+
+        main {
+            grid-area: main;
+            padding: 1em;
+            background: #f4f4f4;
+        }
+
+        aside {
+            grid-area: aside;
+            padding: 1em;
+            background: #ddd;
+            text-align: center;
+        }
+
+        footer {
+            grid-area: footer;
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 1em;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>A Holy Grail Layout Example</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="https://byui.edu">BYU-Idaho</a></li>
+            <li><a href="https://churchofjesuschrist.org">The Church</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section>
+            <h2>BYU-Idaho</h2>
+            <p>BYU-Idaho is a university dedicated to providing a high-quality education with strong values. Whether
+                you're looking to grow academically or spiritually, this institution offers a great environment for
+                personal development. Click at the link BYU-Idaho to learn more!</p>
+        </section>
+        <section>
+            <h2>The Church of Jesus Christ</h2>
+            <p>The Church of Jesus Christ of Latter-day Saints focuses on faith, service, and strengthening families.
+                Discover how its teachings can inspire and guide your life. Click at the button link The Church to
+                explore
+                more!</p>
+        </section>
+    </main>
+    <aside>
+        <img src="https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/accra-ghana/800x500/accra-ghana-temple-758797-wallpaper.jpg"
+            alt="Adelaide Australia Temple" width="200">
+    </aside>
+    <footer>
+        <p>&copy; 2025 Tiago Borges - Paraná, Brazil</p>
+    </footer>
+</body>
+
+</html>
