@@ -87,14 +87,12 @@ nav ul li a {
     font-family: 'Roboto Slab', Arial, sans-serif;
     font-size: large;
     color: black;
-    position: center;
     width: 100px;
 }
 
 .images {
     width: auto;
     height: auto;
-    position: center;
     font-family: 'Roboto Slab', Arial, sans-serif;
     color: black;
 
