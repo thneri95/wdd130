@@ -1,3 +1,7 @@
+
+
+
+
 body {
     font-family: 'Roboto Slab', Arial, sans-serif;
     margin: 0;
@@ -115,8 +119,8 @@ h2 {
 
 .gallery {
     display: flex;
-    justify-content: center;
-    gap: 25px;
+    justify-content: space-around;
+    gap: 30px;
     /* Espaçamento entre as imagens */
     flex-wrap: wrap;
     /* Faz com que as imagens se reorganizem em linhas, se necessário */
