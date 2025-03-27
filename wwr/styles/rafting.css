@@ -12,10 +12,8 @@ header {
     color: white;
     display: grid;
     grid-template-columns: 1fr auto 1fr;
-    /* Cria três colunas: espaçamento nas laterais e o conteúdo no centro */
     align-items: center;
     justify-items: center;
-    /* Centraliza os itens no eixo horizontal */
     padding: 20px;
     gap: 20px;
 }
@@ -28,7 +26,6 @@ header .logo {
 nav {
     display: flex;
     justify-content: center;
-    /* Centraliza os itens do menu */
     gap: 15px;
 }
 
@@ -78,7 +75,6 @@ nav a:hover {
 
 .hero-content img {
     width: 80px;
-    /* Miniatura */
     height: 80px;
     flex-shrink: 0;
 }
@@ -134,7 +130,6 @@ h2 {
     display: flex;
     justify-content: space-around;
     gap: 30px;
-    /* Espaçamento entre as imagens */
     flex-wrap: wrap;
     /* Faz com que as imagens se reorganizem em linhas, se necessário */
 }
