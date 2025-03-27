@@ -131,7 +131,6 @@ h2 {
     justify-content: space-around;
     gap: 30px;
     flex-wrap: wrap;
-    /* Faz com que as imagens se reorganizem em linhas, se necessário */
 }
 
 .gallery figure {
