@@ -33,9 +33,9 @@
     <main>
         <section class="contact-info">
             <h1>Contact Us</h1>
-            <p>We’d love to hear from you! Feel free to reach out via phone, email, or visit us in person </p>
+            <p>We’d love to hear from you! Feel free to reach out via phone, email, or visit us in person.</p>
             <div class="info">
-                <p><strong>Address:</strong>101 E Viking St, Rexburg, ID 83460, United States</p>
+                <p><strong>Address:</strong> 101 E Viking St, Rexburg, ID 83460, United States</p>
                 <p><strong>Phone:</strong> (123) 456-7890</p>
                 <p><strong>Email:</strong> service@whitewaterrafting.com</p>
                 <iframe
@@ -54,15 +54,17 @@
                 <label for="email">Email:</label>
                 <input type="email" id="email" name="email" required>
 
-                <label>Purpose of Message:</label>
-                <div class="radio-group">
-                    <input type="radio" id="inquiry" name="purpose" value="General Inquiry" required>
-                    <label for="inquiry">General Inquiry</label>
-                    <input type="radio" id="reservation" name="purpose" value="Reservation Question">
-                    <label for="reservation">Reservation Question</label>
-                    <input type="radio" id="suggestion" name="purpose" value="Website Suggestion">
-                    <label for="suggestion">Website Suggestion</label>
-                </div>
+                <fieldset>
+                    <legend>Purpose of Message:</legend>
+                    <div class="radio-group">
+                        <input type="radio" id="inquiry" name="purpose" value="General Inquiry" required>
+                        <label for="inquiry">General Inquiry</label>
+                        <input type="radio" id="reservation" name="purpose" value="Reservation Question">
+                        <label for="reservation">Reservation Question</label>
+                        <input type="radio" id="suggestion" name="purpose" value="Website Suggestion">
+                        <label for="suggestion">Website Suggestion</label>
+                    </div>
+                </fieldset>
 
                 <label for="message">Message:</label>
                 <textarea id="message" name="message" rows="5" required></textarea>
@@ -75,7 +77,9 @@
                 <button type="submit">Send Message</button>
             </form>
         </section>
+
         <section class="gallery">
+            <h2>Our Team in Action</h2>
             <div class="gallery">
                 <figure>
                     <img src="images/func1.jpg" alt="Adventure 4">
@@ -83,33 +87,33 @@
                 </figure>
 
                 <figure>
-                    <img src="images/func2.jpg" alt=" Adventure 1">
+                    <img src="images/func2.jpg" alt="Adventure 1">
                     <figcaption>Experienced Team</figcaption>
                 </figure>
 
                 <figure>
-                    <img src="images/employees 3.jpg" alt="Adventure 1">
+                    <img src="images/employees3.jpg" alt="Adventure 1">
                     <figcaption>Top-Rated Guides</figcaption>
                 </figure>
 
-
                 <figure>
-                    <img src="images/equip.jpg" alt=" Adventure 1">
-                    <figcaption>High-Quality Equipment </figcaption>
+                    <img src="images/equip.jpg" alt="Adventure 1">
+                    <figcaption>High-Quality Equipment</figcaption>
                 </figure>
+            </div>
+        </section>
     </main>
 
     <footer>
-        © 2025 Whitewater Rafting. All rights reserved. Designed by Tiago Borges, BYU-Idaho
+        <p>© 2025 Whitewater Rafting. All rights reserved. Designed by Tiago Borges, BYU-Idaho</p>
         <div class="footer-btn">
             <a href="contact.html" class="contact-button">Contact Us</a>
         </div>
 
-
         <div class="social-links">
-            <a href="#"><img src="images/facebook.png" alt="Facebook"></a>
-            <a href="#"><img src="images/twitter.png" alt="Twitter"></a>
-            <a href="#"><img src="images/instagram.png" alt="Instagram"></a>
+            <a href="#" aria-label="Facebook"><img src="images/facebook.png" alt="Facebook"></a>
+            <a href="#" aria-label="Twitter"><img src="images/twitter.png" alt="Twitter"></a>
+            <a href="#" aria-label="Instagram"><img src="images/instagram.png" alt="Instagram"></a>
         </div>
     </footer>
 </body>

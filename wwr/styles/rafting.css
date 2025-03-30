@@ -14,22 +14,17 @@ header {
     background: #005f73;
     color: white;
     padding: 20px;
-
-
-
 }
 
 .container {
     display: grid;
     grid-template-columns: 1fr auto 1fr;
     align-items: center;
-
 }
 
 .logo {
     max-width: 150px;
     justify-self: center;
-
 }
 
 nav a {
@@ -85,6 +80,7 @@ textarea {
     margin-top: 5px;
     border-radius: 5px;
     border: 1px solid #ccc;
+    width: 100%;
 }
 
 .radio-group {
@@ -95,8 +91,11 @@ textarea {
 
 .checkbox-group {
     display: flex;
-    align-items: center;
-    margin: 10px 0;
+    align-content: center;
+    justify-content: center;
+    margin: 0px 0;
+    font-size: large;
+    font-display: center;
 }
 
 button {
@@ -108,22 +107,21 @@ button {
     font-size: 16px;
     cursor: pointer;
     margin-top: 10px;
+    transition: background-color 0.3s ease-in-out;
 }
 
 button:hover {
     background-color: #005f73;
 }
 
-
-
+/* Gallery */
 .gallery {
     display: flex;
-    align-content: center;
-    justify-content: space-evenly;
-    gap: 60px;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    padding: 20px;
 }
-
-
 
 
 
@@ -144,30 +142,32 @@ button:hover {
     font-size: 1em;
     font-weight: bold;
     color: #333;
-    margin-top: 20px;
+    margin-top: 10px;
 }
 
+/* Footer */
 footer {
     background: #005f73;
     color: white;
     padding: 20px;
     margin-top: 20px;
     display: flex;
+    flex-wrap: wrap;
     font-size: large;
     font-weight: bold;
     align-items: center;
-    justify-content: space-evenly;
-
+    justify-content: center;
+    gap: 20px;
+    text-align: center;
 }
 
 footer p {
-    color: White;
+    color: white;
     font-size: large;
 }
 
 .footer-btn {
     text-align: center;
-    margin: 15px 0;
 }
 
 .contact-button {
@@ -186,9 +186,13 @@ footer p {
     background-color: #005f73;
 }
 
+.social-links {
+    display: flex;
+    gap: 10px;
+}
 
 .social-links a {
-    margin: 0 10px;
+    display: inline-block;
 }
 
 .social-links img {
