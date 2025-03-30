@@ -9,7 +9,7 @@ body {
 
 /* Header - Using Grid for better alignment */
 header {
-    background: #2C3E50;
+    background: #005f73;
     color: white;
     padding: 15px 0;
     display: grid;
@@ -39,6 +39,8 @@ nav ul li a {
     color: white;
     text-decoration: none;
     font-weight: bold;
+    font-size: large;
+    padding: 15px;
     transition: color 0.3s ease-in-out;
 }
 
@@ -118,7 +120,7 @@ nav a:hover {
 
 /* FOOTER */
 footer {
-    background: #2C3E50;
+    background: #005f73;
     color: white;
     display: flex;
     padding: 15px;

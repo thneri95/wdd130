@@ -4,83 +4,77 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description"
-        content="Get in touch with White Water Rafting! Find our address, phone numbers, and email, or send us a message through our contact form. Plan your adventure today!">
-    <meta name="author" content="Tiago Borges">
     <title>Contact Us - White Water Rafting</title>
     <link rel="stylesheet" href="styles/contact.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
     <header>
-        <img src="images/Whitewater-logo.png" alt="Logo" class="logo">
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="about.html">About Us</a>
-            <a href="trips.html">Trips</a>
-            <a href="contact.html" class="active">Contact Us</a>
-        </nav>
+        <div class="container">
+            <img src="images/Whitewater-logo.png" alt="Logo" class="logo">
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="about.html">About Us</a>
+                <a href="trips.html">Trips</a>
+                <a href="contact.html" class="active">Contact Us</a>
+            </nav>
+        </div>
     </header>
 
     <main>
         <section class="contact-info">
             <h1>Contact Us</h1>
-            <p>We’d love to hear from you! Feel free to reach out via phone, email, or visit us in person.</p>
-            <div class="contact-details">
-                <p><strong>Address:</strong> 123 River Road, Adventure City, AC 45678</p>
-                <p><strong>Phone:</strong> +1 (123) 456-7890</p>
-                <p><strong>Email:</strong> contact@whitewaterrafting.com</p>
+            <p>We’d love to hear from you! Feel free to reach out via phone, email, or visit us in person </p>
+            <div class="info">
+                <p><strong>Address:</strong> 123 River Road, Adventure Town, USA</p>
+                <p><strong>Phone:</strong> (123) 456-7890</p>
+                <p><strong>Email:</strong> info@whitewaterrafting.com</p>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3151.835434509607!2d144.96305761531693!3d-37.816279279751595!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad65d43f3f5f3f7%3A0x1a2a0f05f3f4d1e4!2sWhitewater%20Rafting!5e0!3m2!1sen!2sus!4v1600290334426!5m2!1sen!2sus"
+                    width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
             </div>
         </section>
 
-
-
         <section class="contact-form">
             <h2>Send Us a Message</h2>
-            <fieldset>
-                <legend>Purpose of Message:</legend>
-                <label><input type="radio" name="purpose" value="General Inquiry" required> General Inquiry</label>
-                <label><input type="radio" name="purpose" value="Reservation Question" required> Reservation
-                    Question</label>
-                <label><input type="radio" name="purpose" value="Website Suggestion" required> Website
-                    Suggestion</label>
-            </fieldset>
-
-
-            <form action="#" method="post">
-
-                <label for="name">Your Name:</label>
+            <form action="#" method="POST">
+                <label for="name">Full Name:</label>
                 <input type="text" id="name" name="name" required>
 
-                <label for="email">Your Email:</label>
+                <label for="email">Email:</label>
                 <input type="email" id="email" name="email" required>
 
-                <label for="message">Your Message:</label>
+                <label>Purpose of Message:</label>
+                <div class="radio-group">
+                    <input type="radio" id="inquiry" name="purpose" value="General Inquiry" required>
+                    <label for="inquiry">General Inquiry</label>
+                    <input type="radio" id="reservation" name="purpose" value="Reservation Question">
+                    <label for="reservation">Reservation Question</label>
+                    <input type="radio" id="suggestion" name="purpose" value="Website Suggestion">
+                    <label for="suggestion">Website Suggestion</label>
+                </div>
+
+                <label for="message">Message:</label>
                 <textarea id="message" name="message" rows="5" required></textarea>
+
+                <div class="checkbox-group">
+                    <input type="checkbox" id="newsletter" name="newsletter">
+                    <label for="newsletter">Please subscribe me to the monthly newsletter</label>
+                </div>
 
                 <button type="submit">Send Message</button>
             </form>
         </section>
-
-
-        <section class="map">
-            <h2>Find Us Here</h2>
-            <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3151.8354345094077!2d144.953735315318!3d-37.81720997975162!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad65d5df1b1b3fd%3A0x69c0e27b3120f0bb!2sAdventure%20Rafting!5e0!3m2!1sen!2sus!4v1614144762596!5m2!1sen!2sus"
-                width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-        </section>
     </main>
 
     <footer>
-        <p>&copy; 2025 Whitewater Rafting. All rights reserved | Designed by Tiago Borges, BYU-Idaho</p>
-        <nav class="social-links">
-            <a href="https://www.facebook.com/"><img src="images/facebook.png" alt="Facebook"></a>
-            <a href="https://x.com/"><img src="images/twitter.png" alt="Twitter"></a>
-            <a href="https://www.instagram.com/"><img src="images/instagram.png" alt="Instagram"></a>
-        </nav>
+        © 2025 Whitewater Rafting. All rights reserved. Designed by Tiago Borges, BYU-Idaho.
+
+        <div class="social-links">
+            <a href="#"><img src="images/facebook.png" alt="Facebook"></a>
+            <a href="#"><img src="images/twitter.png" alt="Twitter"></a>
+            <a href="#"><img src="images/instagram.png" alt="Instagram"></a>
+        </div>
     </footer>
 </body>
 
