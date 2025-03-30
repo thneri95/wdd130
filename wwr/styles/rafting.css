@@ -118,7 +118,7 @@ button:hover {
     flex-wrap: wrap;
     justify-content: center;
     gap: 30px;
-    padding: 20px;
+    padding: auto;
 }
 
 
@@ -134,6 +134,7 @@ button:hover {
     height: 150px;
     border-radius: 8px;
     background: #ddd;
+    padding: auto;
 }
 
 .gallery figcaption {
