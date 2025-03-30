@@ -4,50 +4,69 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Us</title>
-    <link rel="stylesheet" href="styles/rafting.css">
+    <meta name="description"
+        content="Get in touch with White Water Rafting! Find our address, phone numbers, and email, or send us a message through our contact form. Plan your adventure today!">
+    <meta name="author" content="Tiago Borges">
+    <title>Contact Us - White Water Rafting</title>
+    <link rel="stylesheet" href="styles/contact.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
-    <header> <img src="images/Whitewater-logo.png" alt="">
-        <h1> Contact Us</h1>
+    <header>
+        <img src="images/Whitewater-logo.png" alt="Logo" class="logo">
         <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About Us</a></li>
-                <li><a href="trips.html">Trips</a></li>
-                <li><a href="contact.html">Contact Us</a></li>
-            </ul>
+            <a href="index.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="trips.html">Trips</a>
+            <a href="contact.html" class="active">Contact Us</a>
         </nav>
     </header>
 
-    <section class="content-contact">
-        <h2>Get in Touch</h2>
-        <p>Email: info@raftingadventures.com</p>
-        <p>Phone: (+55) 44 98822-2377</p>
-        <h3>Send Us a Message</h3>
-        <form>
-            <input type="text" placeholder="Your Name" required>
-            <input type="email" placeholder="Your Email" required>
-            <textarea placeholder="Your Message" required></textarea>
-            <button type="submit">Submit</button>
-        </form>
-    </section>
+    <main>
+        <section class="contact-info">
+            <h1>Contact Us</h1>
+            <p>We’d love to hear from you! Feel free to reach out via phone, email, or visit us in person.</p>
+            <div class="contact-details">
+                <p><strong>Address:</strong> 123 River Road, Adventure City, AC 45678</p>
+                <p><strong>Phone:</strong> +1 (123) 456-7890</p>
+                <p><strong>Email:</strong> contact@whitewaterrafting.com</p>
+            </div>
+        </section>
+
+        <section class="contact-form">
+            <h2>Send Us a Message</h2>
+            <form action="#" method="post">
+                <label for="name">Your Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Your Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Your Message:</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
+
+        <section class="map">
+            <h2>Find Us Here</h2>
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3151.8354345094077!2d144.953735315318!3d-37.81720997975162!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad65d5df1b1b3fd%3A0x69c0e27b3120f0bb!2sAdventure%20Rafting!5e0!3m2!1sen!2sus!4v1614144762596!5m2!1sen!2sus"
+                width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </section>
+    </main>
 
     <footer>
-        <p>&copy; 2025 Whitewater Rafting. All rights reserved. Tiago Borges, BYU-Idaho</p>
-
-        <div class="social-links">
-            <a href="https://facebook.com" target="_blank">
-                <img src="images/facebook.png" alt="Facebook">
-            </a>
-            <a href="https://twitter.com" target="_blank">
-                <img src="images/twitter.png" alt="Twitter">
-            </a>
-            <a href="https://instagram.com" target="_blank">
-                <img src="images/instagram.png" alt="Instagram">
-            </a>
-        </div>
+        <p>&copy; 2025 Whitewater Rafting. All rights reserved | Designed by Tiago Borges, BYU-Idaho</p>
+        <nav class="social-links">
+            <a href="https://www.facebook.com/"><img src="images/facebook.png" alt="Facebook"></a>
+            <a href="https://x.com/"><img src="images/twitter.png" alt="Twitter"></a>
+            <a href="https://www.instagram.com/"><img src="images/instagram.png" alt="Instagram"></a>
+        </nav>
     </footer>
 </body>
 

@@ -1,0 +1,158 @@
+/* General Styles */
+body {
+    font-family: 'Roboto', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    text-align: center;
+}
+
+/* Header - Using Grid for better alignment */
+header {
+    background: #2C3E50;
+    color: white;
+    padding: 15px 0;
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    align-items: center;
+}
+
+.logo {
+    max-width: 150px;
+    justify-self: center;
+}
+
+nav {
+    justify-self: center;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    margin: 0 15px;
+    font-size: 1.1em;
+}
+
+/* Contact Section */
+.contact-section {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 20px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.contact-section h2 {
+    color: #2C3E50;
+    margin-bottom: 15px;
+}
+
+/* Contact Details */
+.contact-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    font-size: 1.1em;
+}
+
+.contact-info p {
+    margin: 5px 0;
+}
+
+/* Contact Form */
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    max-width: 500px;
+    margin: 20px auto;
+    text-align: left;
+}
+
+.contact-form label {
+    font-weight: bold;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+.contact-form textarea {
+    height: 120px;
+    resize: vertical;
+}
+
+.contact-form button {
+    background: #2C3E50;
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1em;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.contact-form button:hover {
+    background: #1A252F;
+}
+
+/* Google Map */
+.map-container {
+    margin-top: 20px;
+}
+
+.map-container iframe {
+    width: 100%;
+    max-width: 900px;
+    height: 350px;
+    border-radius: 10px;
+}
+
+/* FOOTER */
+footer {
+    background: #2C3E50;
+    color: white;
+    display: flex;
+    padding: 15px;
+    margin-top: 20px;
+    font-size: 0.9em;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+footer p {
+    margin: 0;
+}
+
+.social-links a {
+    margin: 0 10px;
+}
+
+.social-links img {
+    width: 24px;
+    height: 24px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .contact-info {
+        text-align: center;
+    }
+
+    .contact-form {
+        width: 90%;
+    }
+
+    .map-container iframe {
+        height: 250px;
+    }
+}

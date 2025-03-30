@@ -1,0 +1,183 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Font and Body */
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    background-color: #f8f8f8;
+    color: #333;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* HEADER */
+header {
+    background: #2C3E50;
+    color: white;
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    align-items: center;
+    justify-items: center;
+    padding: 20px;
+    gap: 20px;
+}
+
+header .logo {
+    width: 150px;
+    height: auto;
+}
+
+header nav a {
+    color: white;
+    font-weight: bold;
+    margin-left: 20px;
+}
+
+/* Hero Section */
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #white;
+    color: black;
+    padding: 60px 20px;
+    position: relative;
+}
+
+.hero .hero-content {
+    max-width: 50%;
+}
+
+.hero h2 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+.hero .btn {
+    padding: 10px 20px;
+    background-color: #16a085;
+    color: white;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+.hero-img {
+    width: 50%;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* Mission Section */
+.mission {
+    background-color: #fff;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.mission h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.mission p {
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+}
+
+.mission .btn {
+    padding: 10px 20px;
+    background-color: gray;
+    color: white;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+/* Testimonials Section */
+.testimonials {
+    background-color: #ecf0f1;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.testimonials h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.testimonial {
+    margin-bottom: 30px;
+}
+
+.testimonial p {
+    font-size: 1.2rem;
+    font-style: italic;
+}
+
+.testimonial strong {
+    display: block;
+    font-size: 1rem;
+    margin-top: 10px;
+}
+
+/* FOOTER */
+footer {
+    background: #2C3E50;
+    color: white;
+    display: flex;
+    padding: 15px;
+    margin-top: 20px;
+    font-size: 0.9em;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+footer p {
+    margin: 0;
+}
+
+.social-links a {
+    margin: 0 10px;
+}
+
+.social-links img {
+    width: 24px;
+    height: 24px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .hero {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero .hero-img {
+        width: 80%;
+        margin-top: 20px;
+    }
+
+    .hero .hero-content {
+        max-width: 100%;
+    }
+
+    .mission h2 {
+        font-size: 2rem;
+    }
+
+    .testimonials h2 {
+        font-size: 2rem;
+    }
+}
