@@ -23,15 +23,20 @@ header {
 }
 
 nav {
-    justify-self: center;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
 }
 
 nav a {
     color: white;
     text-decoration: none;
     font-weight: bold;
-    margin: 0 15px;
-    font-size: 1.1em;
+    transition: color 0.3s ease-in-out;
+}
+
+nav a:hover {
+    color: #1ABC9C;
 }
 
 /* Contact Section */

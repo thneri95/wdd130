@@ -33,10 +33,21 @@ header {
     justify-self: center;
 }
 
-header nav a {
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+nav a {
     color: white;
+    text-decoration: none;
     font-weight: bold;
-    margin-left: 20px;
+    transition: color 0.3s ease-in-out;
+}
+
+nav a:hover {
+    color: #1ABC9C;
 }
 
 /* Hero Section */
