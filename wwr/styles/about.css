@@ -6,11 +6,16 @@ body {
     text-align: center;
 }
 
+a {
+    text-decoration: none;
+}
+
+
 /* Header - Using Grid for better alignment */
 header {
     background: #005f73;
     color: white;
-    padding: 15px 0;
+    padding: 20px;
     display: grid;
     grid-template-columns: 1fr auto 1fr;
     align-items: center;
@@ -18,9 +23,8 @@ header {
 
 .logo {
     max-width: 150px;
-    justify-self: center;
+    place-self: center;
 }
-
 
 nav {
     display: flex;
@@ -159,7 +163,7 @@ h2 {
 footer {
     background: #005f73;
     color: white;
-    padding: 20px;
+    padding: 15px;
     display: flex;
     justify-content: space-between;
     align-items: center;

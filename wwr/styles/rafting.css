@@ -7,6 +7,11 @@ body {
     color: #333;
 }
 
+a {
+    text-decoration: none;
+}
+
+
 /* Header */
 header {
     display: grid;
@@ -24,7 +29,7 @@ header {
 
 .logo {
     max-width: 150px;
-    justify-self: center;
+    place-self: center;
 }
 
 nav a {
@@ -147,7 +152,7 @@ button:hover {
 footer {
     background: #005f73;
     color: white;
-    padding: 20px;
+    padding: 15px;
     display: flex;
     justify-content: space-between;
     align-items: center;

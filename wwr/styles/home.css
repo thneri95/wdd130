@@ -5,6 +5,11 @@
     box-sizing: border-box;
 }
 
+a {
+    text-decoration: none;
+}
+
+
 body {
     font-family: 'Roboto Slab', Arial, sans-serif;
     background-color: #f4f4f4;
@@ -16,13 +21,14 @@ header {
     background: #005f73;
     color: white;
     padding: 20px;
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
     align-items: center;
 }
 
 .logo {
     max-width: 150px;
+    place-self: center;
 }
 
 nav {
@@ -76,7 +82,7 @@ nav a:hover {
 
 .hero-img {
     width: 100%;
-    max-width: 600px;
+    max-width: 100%;
     border-radius: 10px;
     margin-top: 20px;
 }

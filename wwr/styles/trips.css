@@ -7,6 +7,11 @@ body {
     text-align: center;
 }
 
+a {
+    text-decoration: none;
+}
+
+
 /* Header - Using Grid for better alignment */
 header {
     background: #005f73;
@@ -19,7 +24,7 @@ header {
 
 .logo {
     max-width: 150px;
-    justify-self: center;
+    place-self: center;
 }
 
 nav ul {
