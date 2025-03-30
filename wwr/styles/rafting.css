@@ -1,39 +1,42 @@
 body {
-    font-family: 'Roboto Slab', Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: white;
-    text-align: center;
+    font-family: 'Roboto Slab', Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f8f8f8;
+    color: #333;
 }
 
-/* Header - Using Grid for better alignment */
+/* Header */
 header {
+    display: grid;
+    font-size: large;
     background: #005f73;
     color: white;
-    padding: 15px 0;
+    padding: 20px;
+
+
+
+}
+
+.container {
     display: grid;
     grid-template-columns: 1fr auto 1fr;
     align-items: center;
+
 }
 
 .logo {
     max-width: 150px;
     justify-self: center;
-}
 
-
-nav {
-    display: flex;
-    justify-content: center;
-    gap: 15px;
 }
 
 nav a {
     color: white;
     text-decoration: none;
     font-weight: bold;
-    font-size: large;
-    padding: 20px;
+    margin: 15px;
     transition: color 0.3s ease-in-out;
 }
 
@@ -41,127 +44,82 @@ nav a:hover {
     color: #1ABC9C;
 }
 
-/* HERO SECTION */
-.hero {
+/* Contact Info Section */
+.contact-info {
     background: white;
     padding: 20px;
+    text-align: center;
+}
+
+.info p {
+    font-size: 18px;
+}
+
+/* Contact Form */
+.contact-form {
+    background: white;
+    padding: 20px;
+    width: 80%;
+    margin: 20px auto;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form h2 {
+    text-align: center;
+}
+
+form {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    text-align: center;
 }
 
-.hero h1 {
-    font-size: 2em;
-    margin-bottom: 20px;
+label {
+    font-weight: bold;
+    margin-top: 10px;
 }
 
-.hero-content {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    max-width: 800px;
-    width: 100%;
-    text-align: left;
+input,
+textarea {
+    padding: 10px;
+    margin-top: 5px;
+    border-radius: 5px;
     border: 1px solid #ccc;
-    padding: 20px;
-    border-radius: 10px;
-    background: #f9f9f9;
 }
 
-.hero-content p {
-    flex: 1;
-    margin-right: 20px;
+.radio-group {
+    display: flex;
+    gap: 10px;
+    margin: 10px 0;
 }
 
-.hero-content img {
-    width: 80px;
-    height: 80px;
-    flex-shrink: 0;
-}
-
-/* MAIN CONTENT */
-main {
-    max-width: 900px;
-    margin: 2rem auto;
-    padding: 0 20px;
-}
-
-article {
+.checkbox-group {
     display: flex;
     align-items: center;
-    margin-bottom: 2rem;
+    margin: 10px 0;
 }
 
-article img {
-    width: 50%;
-    margin-right: 20px;
+button {
+    background-color: #0077b6;
+    color: white;
+    padding: 15px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 10px;
 }
 
-article p {
-    text-align: left;
+button:hover {
+    background-color: #005f73;
 }
-
-/* HISTORY SECTION */
-.history {
-    background: white;
-    padding: 20px;
-}
-
-.history-content {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    text-align: left;
-}
-
-.history-content img {
-    width: 250px;
-    height: 200px;
-    margin: 0 20px;
-}
-
-/* HEADINGS */
-h2 {
-    color: #2C3E50;
-}
-
-
-.gallery {
-    display: flex;
-    justify-content: space-around;
-    gap: 30px;
-    flex-wrap: wrap;
-}
-
-.gallery figure {
-    text-align: center;
-    margin: 0;
-}
-
-.gallery img {
-    width: 140px;
-    /* Ajuste do tamanho das imagens */
-    height: 150px;
-    border-radius: 8px;
-    background: #ddd;
-    /* Simula a aparência do placeholder */
-}
-
-.gallery figcaption {
-    font-size: 1em;
-    color: #333;
-    margin-top: 20px;
-    /* Espaço entre a imagem e o texto */
-}
-
 
 footer {
     background: #005f73;
     color: white;
-    display: flex;
     padding: 20px;
     margin-top: 20px;
+    display: flex;
     font-size: large;
     font-weight: bold;
     align-items: center;
@@ -180,45 +138,3 @@ footer p {
     width: 24px;
     height: 24px;
 }
-
-/* RESPONSIVIDADE */
-@media (max-width: 768px) {
-    .hero-content {
-        flex-direction: column;
-        text-align: center;
-    }
-
-    .hero-content p {
-        margin-right: 0;
-        margin-bottom: 15px;
-    }
-
-    .history-content {
-        flex-direction: column;
-        text-align: center;
-    }
-
-    .history-content img {
-        margin: 10px 0;
-        width: 200px;
-        height: auto;
-    }
-
-    article {
-        flex-direction: column;
-        text-align: center;
-    }
-
-    article img {
-        width: 100%;
-        margin-right: 0;
-        margin-bottom: 10px;
-    }
-
-    footer {
-        flex-direction: column;
-        text-align: center;
-    }
-}
-
-/* The end
