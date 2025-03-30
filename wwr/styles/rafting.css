@@ -33,7 +33,7 @@ nav a {
     text-decoration: none;
     font-weight: bold;
     font-size: large;
-    padding: 15px;
+    padding: 20px;
     transition: color 0.3s ease-in-out;
 }
 
@@ -156,14 +156,14 @@ h2 {
 }
 
 
-/* FOOTER */
 footer {
     background: #005f73;
     color: white;
     display: flex;
-    padding: 15px;
+    padding: 20px;
     margin-top: 20px;
-    font-size: 0.9em;
+    font-size: large;
+    font-weight: bold;
     align-items: center;
     justify-content: space-evenly;
 }

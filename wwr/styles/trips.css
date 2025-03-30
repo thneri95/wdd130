@@ -11,7 +11,7 @@ body {
 header {
     background: #005f73;
     color: white;
-    padding: 15px 0;
+    padding: 20px;
     display: grid;
     grid-template-columns: 1fr auto 1fr;
     align-items: center;
@@ -123,9 +123,10 @@ footer {
     background: #005f73;
     color: white;
     display: flex;
-    padding: 15px;
+    padding: 20px;
     margin-top: 20px;
-    font-size: 0.9em;
+    font-size: large;
+    font-weight: bold;
     align-items: center;
     justify-content: space-evenly;
 }
