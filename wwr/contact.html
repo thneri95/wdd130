@@ -36,9 +36,22 @@
             </div>
         </section>
 
+
+
         <section class="contact-form">
             <h2>Send Us a Message</h2>
+            <fieldset>
+                <legend>Purpose of Message:</legend>
+                <label><input type="radio" name="purpose" value="General Inquiry" required> General Inquiry</label>
+                <label><input type="radio" name="purpose" value="Reservation Question" required> Reservation
+                    Question</label>
+                <label><input type="radio" name="purpose" value="Website Suggestion" required> Website
+                    Suggestion</label>
+            </fieldset>
+
+
             <form action="#" method="post">
+
                 <label for="name">Your Name:</label>
                 <input type="text" id="name" name="name" required>
 
@@ -51,6 +64,7 @@
                 <button type="submit">Send Message</button>
             </form>
         </section>
+
 
         <section class="map">
             <h2>Find Us Here</h2>
