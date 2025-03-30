@@ -6,22 +6,21 @@ body {
     text-align: center;
 }
 
-/* HEADER */
+/* Header - Using Grid for better alignment */
 header {
     background: #2C3E50;
     color: white;
+    padding: 15px 0;
     display: grid;
     grid-template-columns: 1fr auto 1fr;
     align-items: center;
-    justify-items: center;
-    padding: 20px;
-    gap: 20px;
 }
 
-header .logo {
-    width: 150px;
-    height: auto;
+.logo {
+    max-width: 150px;
+    justify-self: center;
 }
+
 
 nav {
     display: flex;
