@@ -10,7 +10,6 @@ body {
 /* Header */
 header {
     display: grid;
-    grid-template-columns: auto end;
     font-size: large;
     background: #005f73;
     color: white;
