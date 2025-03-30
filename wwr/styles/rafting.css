@@ -148,49 +148,30 @@ footer {
     background: #005f73;
     color: white;
     padding: 20px;
-    margin-top: 20px;
     display: flex;
-    flex-wrap: wrap;
-    font-size: large;
-    font-weight: bold;
+    justify-content: space-between;
     align-items: center;
-    justify-content: center;
-    gap: 20px;
-    text-align: center;
 }
 
 footer p {
-    color: white;
     font-size: large;
 }
 
-.footer-btn {
-    text-align: center;
-}
-
-.contact-button {
-    background-color: #0077b6;
+.footer-btn .contact-button {
+    background: #0077b6;
     color: white;
     padding: 12px 20px;
-    text-decoration: none;
-    font-size: 16px;
-    font-weight: bold;
     border-radius: 5px;
-    transition: background-color 0.3s ease-in-out;
-    display: inline-block;
+    font-weight: bold;
+    transition: 0.3s;
 }
 
-.contact-button:hover {
-    background-color: #005f73;
-}
-
-.social-links {
-    display: flex;
-    gap: 10px;
+.footer-btn .contact-button:hover {
+    background: #005f73;
 }
 
 .social-links a {
-    display: inline-block;
+    margin: 0 10px;
 }
 
 .social-links img {

@@ -7,44 +7,35 @@
 
 body {
     font-family: 'Roboto Slab', Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: white;
+    background-color: #f4f4f4;
     text-align: center;
 }
 
-a {
-    text-decoration: none;
-    color: inherit;
-}
-
+/* Header */
 header {
     background: #005f73;
     color: white;
     padding: 20px;
-    display: grid;
-    grid-template-columns: 1fr auto 1fr;
+    display: flex;
+    justify-content: space-between;
     align-items: center;
 }
 
 .logo {
     max-width: 150px;
-    justify-self: center;
 }
 
 nav {
     display: flex;
-    justify-content: center;
-    gap: 15px;
+    gap: 20px;
 }
 
 nav a {
     color: white;
-    text-decoration: none;
     font-weight: bold;
     font-size: large;
-    padding: 15px;
-    transition: color 0.3s ease-in-out;
+    padding: 10px;
+    transition: color 0.3s;
 }
 
 nav a:hover {
@@ -54,20 +45,14 @@ nav a:hover {
 /* Hero Section */
 .hero {
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
     align-items: center;
-    background-color: white;
-    color: black;
+    background: white;
     padding: 60px 20px;
-    position: relative;
-}
-
-.hero .hero-content {
-    max-width: 50%;
 }
 
 .hero h2 {
-    font-size: 3rem;
+    font-size: 2.5rem;
     margin-bottom: 20px;
 }
 
@@ -78,23 +63,28 @@ nav a:hover {
 
 .hero .btn {
     padding: 10px 20px;
-    background-color: #16a085;
+    background: #16a085;
     color: white;
-    font-weight: bold;
     border-radius: 5px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.hero .btn:hover {
+    background: #005f73;
 }
 
 .hero-img {
-    width: 50%;
-    height: auto;
+    width: 100%;
+    max-width: 600px;
     border-radius: 10px;
+    margin-top: 20px;
 }
 
 /* Mission Section */
 .mission {
-    background-color: #fff;
-    padding: 40px 20px;
-    text-align: center;
+    background: white;
+    padding: 40px;
 }
 
 .mission h2 {
@@ -109,17 +99,21 @@ nav a:hover {
 
 .mission .btn {
     padding: 10px 20px;
-    background-color: gray;
+    background: #0077b6;
     color: white;
-    font-weight: bold;
     border-radius: 5px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.mission .btn:hover {
+    background: #005f73;
 }
 
 /* Testimonials Section */
 .testimonials {
-    background-color: #ecf0f1;
-    padding: 40px 20px;
-    text-align: center;
+    background: #ecf0f1;
+    padding: 40px;
 }
 
 .testimonials h2 {
@@ -142,46 +136,32 @@ nav a:hover {
     margin-top: 10px;
 }
 
-/* FOOTER */
+/* Footer */
 footer {
     background: #005f73;
     color: white;
     padding: 20px;
-    margin-top: 20px;
     display: flex;
-    font-size: large;
-    font-weight: bold;
+    justify-content: space-between;
     align-items: center;
-    justify-content: space-evenly;
-
 }
 
 footer p {
-    color: White;
     font-size: large;
 }
 
-.footer-btn {
-    text-align: center;
-    margin: 15px 0;
-}
-
-.contact-button {
-    background-color: #0077b6;
+.footer-btn .contact-button {
+    background: #0077b6;
     color: white;
     padding: 12px 20px;
-    text-decoration: none;
-    font-size: 16px;
-    font-weight: bold;
     border-radius: 5px;
-    transition: background-color 0.3s ease-in-out;
-    display: inline-block;
+    font-weight: bold;
+    transition: 0.3s;
 }
 
-.contact-button:hover {
-    background-color: #005f73;
+.footer-btn .contact-button:hover {
+    background: #005f73;
 }
-
 
 .social-links a {
     margin: 0 10px;
@@ -194,25 +174,22 @@ footer p {
 
 /* Responsive Design */
 @media (max-width: 768px) {
-    .hero {
+    header {
         flex-direction: column;
         text-align: center;
     }
 
-    .hero .hero-img {
-        width: 80%;
-        margin-top: 20px;
+    nav {
+        flex-direction: column;
+        gap: 10px;
     }
 
-    .hero .hero-content {
-        max-width: 100%;
-    }
-
-    .mission h2 {
+    .hero h2 {
         font-size: 2rem;
     }
 
-    .testimonials h2 {
+    .testimonials h2,
+    .mission h2 {
         font-size: 2rem;
     }
 }
