@@ -114,6 +114,39 @@ button:hover {
     background-color: #005f73;
 }
 
+
+
+.gallery {
+    display: flex;
+    align-content: center;
+    justify-content: space-evenly;
+    gap: 60px;
+}
+
+
+
+
+
+
+.gallery figure {
+    text-align: center;
+    margin: 0;
+}
+
+.gallery img {
+    width: 140px;
+    height: 150px;
+    border-radius: 8px;
+    background: #ddd;
+}
+
+.gallery figcaption {
+    font-size: 1em;
+    font-weight: bold;
+    color: #333;
+    margin-top: 20px;
+}
+
 footer {
     background: #005f73;
     color: white;
@@ -124,11 +157,35 @@ footer {
     font-weight: bold;
     align-items: center;
     justify-content: space-evenly;
+
 }
 
 footer p {
-    margin: 0;
+    color: White;
+    font-size: large;
 }
+
+.footer-btn {
+    text-align: center;
+    margin: 15px 0;
+}
+
+.contact-button {
+    background-color: #0077b6;
+    color: white;
+    padding: 12px 20px;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background-color 0.3s ease-in-out;
+    display: inline-block;
+}
+
+.contact-button:hover {
+    background-color: #005f73;
+}
+
 
 .social-links a {
     margin: 0 10px;
