@@ -45,7 +45,7 @@ nav a {
 }
 
 nav a:hover {
-    color: #1ABC9C;
+    color: #005f73;
 }
 
 /* Hero Section */
@@ -141,6 +141,60 @@ nav a:hover {
     font-size: 1rem;
     margin-top: 10px;
 }
+
+/* Newsletter Section */
+.newsletter {
+    background-color: #ffffff;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.newsletter h2 {
+    font-size: 2.2rem;
+    margin-bottom: 15px;
+    color: #005f73;
+}
+
+.newsletter p {
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+}
+
+.newsletter-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.newsletter-form input[type="text"],
+.newsletter-form input[type="email"] {
+    padding: 12px;
+    width: 300px;
+    max-width: 90%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.newsletter-form button {
+    padding: 12px 20px;
+    background-color: #0077b6;
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.newsletter-form button:hover {
+    background-color: #005f73;
+}
+
+
+
 
 /* Footer */
 footer {
