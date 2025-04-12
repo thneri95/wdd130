@@ -123,6 +123,8 @@ nav a:hover {
     background: #1E73BE;
 }
 
+
+
 /* Footer */
 footer {
     background: #005f73;
@@ -131,10 +133,12 @@ footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 footer p {
-    font-size: large;
+    font-size: 1.1rem;
+    margin: 10px;
 }
 
 .footer-btn .contact-button {
@@ -144,17 +148,20 @@ footer p {
     border-radius: 5px;
     font-weight: bold;
     transition: 0.3s;
+    margin: 10px;
 }
 
 .footer-btn .contact-button:hover {
     background: #005f73;
 }
 
-.social-links a {
-    margin: 0 10px;
+.social-links {
+    display: flex;
+    gap: 10px;
+    margin: 10px;
 }
 
-.social-links img {
+.social-links a img {
     width: 24px;
     height: 24px;
 }
@@ -166,15 +173,27 @@ footer p {
         text-align: center;
     }
 
-    nav ul {
+    nav {
         flex-direction: column;
+        gap: 10px;
     }
 
-    .hero {
-        padding: 40px 20px;
+    .hero .hero-content {
+        max-width: 100%;
     }
 
     .hero h2 {
-        font-size: 2em;
+        font-size: 2rem;
+    }
+
+    .mission h2,
+    .testimonials h2,
+    .newsletter h2 {
+        font-size: 2rem;
+    }
+
+    footer {
+        flex-direction: column;
+        text-align: center;
     }
 }
