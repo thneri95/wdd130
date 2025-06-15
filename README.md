@@ -94,4 +94,6 @@ Enhance mobile responsiveness and accessibility (WCAG practices)
 
 
 ✅ Summary
-This project is simple—but it represents the foundation of everything I’ll build in the future. It’s the first step on my journey as a front-end and full-stack developer. Every line of HTML and CSS here is a brick in the digital structures I’ll design tomorrow.
+This project is simple—but it represents the foundation of everything I’ll build in the future. It’s the first step
+on my journey as a front-end and full-stack developer. Every line of HTML and CSS here is a brick in the digital structures
+I’ll design tomorrow.
